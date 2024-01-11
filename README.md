@@ -1,6 +1,6 @@
 # assisten-sehatku-client
 
-Web app asisten sehatku build with bulma css (bulma.io) and Vue 3 for frontend
+Web app asisten sehatku build with bulma css (https://bulma.io) and Vue 3 for frontend
 
 This template should help get you started developing with Vue 3 in Vite.
 
