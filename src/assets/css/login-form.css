@@ -1,0 +1,9 @@
+.bg-Form {
+    background-image: url('../images/background-form.jpg');
+    /* background-color: linear-gradient(90deg, rgba(59,51,190,1) 0%, rgba(86,169,215,1) 44%, rgba(0,212,255,1) 74%); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+  }
