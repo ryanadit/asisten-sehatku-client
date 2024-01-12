@@ -8,7 +8,7 @@
                     <div class="box">
                         <img src="../../assets/images/logo-sehatku.png" style="margin-bottom: 20px; width: 40%; height: 40%;">
                         <p class="subtitle has-text-grey mt-1 mb-3">Layanan lupa pasword</p>
-                        <form @keyup.enter="submit">
+                        <form>
                             <div class="field" v-if="!isEnterPass">
                                 <p class="control has-icons-left has-icons-right">
                                     <input class="input" v-bind:class="msg['email'] ? ' is-danger' : ''"

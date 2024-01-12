@@ -12,10 +12,10 @@
                     <div class="card">
                         <div class="card-content">
                             <div class="content has-text-info">
-                                Sebelum <strong>&nbsp;Asisten Sehatku&nbsp;</strong> memberikan konsultasi medical check-up,
+                                Sebelum <strong>&nbsp;Asisten Sehatku&nbsp;</strong> memberikan layanan online medical check-up,
                                 kami memerlukan data sahabat<strong>&nbsp;Asisten Sehatku&nbsp;</strong> agar kami dapat
-                                memberikan solusi dan konsultasi.
-                                Silahkan pilih yang ingin di konsultasikan terkait medical check-up kepada kami, sahabat
+                                memberikan solusi untuk anda.
+                                Silahkan pilih yang layanan terkait medical check-up kepada kami, sahabat
                                 <strong>&nbsp;Asisten Sehatku&nbsp;</strong> dapat memilih salah satu yang terdiri dari
                                 check-up gula darah, check-up asam urat dan check-up kolesterol.
                             </div>
@@ -161,7 +161,7 @@
                                                         <i class="fa fa-child"></i>
                                                     </span>
                                                 </p>
-                                                <p class="control">
+                                                <p class="control ml-4">
                                                     mg/desileter
                                                 </p>
                                             </div>
@@ -371,6 +371,8 @@ export default {
             }
             if (!this.isResultRight) {
                 this.getHospitals()
+            } else {
+                this.isLoading = false
             }
         },
         indicatorAm() {
@@ -433,6 +435,8 @@ export default {
             } 
             if (!this.isResultRight) {
                 this.getHospitals()
+            } else {
+                this.isLoading = false
             }
         },
         indicatorKol() {
@@ -477,6 +481,8 @@ export default {
             }  
             if (!this.isResultRight) {
                 this.getHospitals()
+            } else {
+                this.isLoading = false
             }
         },
         async getHospitals() {
@@ -556,6 +562,7 @@ export default {
             this.resultConsult= ''
             this.age= null
             this.listHospital = []
+            this.isLoading = false
         }
 
     },

@@ -11,7 +11,7 @@
                     <div class="form" @keyup.enter="search">
                         <div class="field has-addons">
                         <div class="control">
-                            <input class="input" type="text" placeholder="Cari Faskes" v-model="searchText">
+                            <input class="input" type="text" placeholder="Cari kota" v-model="searchText">
                         </div>
                         <div class="control">
                             <a class="button is-info" v-on:click="search">
